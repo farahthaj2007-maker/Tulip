@@ -1,0 +1,54 @@
+<style>
+    body {
+        background-color: #fff5f7; /* Soft pink aesthetic */
+        font-family: 'Georgia', serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    .header { text-align: center; margin-bottom: 40px; }
+    
+    /* The Grid Layout */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 1000px;
+        width: 100%;
+    }
+    
+    /* Pinterest-style Cards */
+    .card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-text { padding: 15px; text-align: center; font-size: 0.9rem; }
+</style>
+
+<div class="header">
+    <h1>🌷 Tulip by Farah</h1>
+    <p>My aesthetic Pinterest-inspired page ✨</p>
+</div>
+
+<div class="grid">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500&q=60" alt="Flowers">
+        <div class="card-text"><b>Nature Inspiration</b><br>Spring vibes</div>
+    </div>
+    
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=500&q=60" alt="Architecture">
+        <div class="card-text"><b>Design & Structure</b><br>Modern lines</div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=500&q=60" alt="Aesthetic">
+        <div class="card-text"><b>Aesthetic Decor</b><br>Minimalist living</div>
+    </div>
+</div>
